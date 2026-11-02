@@ -1,0 +1,18 @@
+$kind: http-request
+method: POST
+url: '{{base_url}}/api/additineraries'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Accept
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "tour_id": 1,
+      "day_number": 1,
+      "title": "Arrival & Orientation",
+      "description": "Arrive at the destination and get settled in."
+    }
